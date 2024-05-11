@@ -1,0 +1,21 @@
+{
+  "name": "one-ring",
+  "description": "A chrome extension to put an end to the fires of Mount Doom-scrolling YouTube shorts",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "dependencies": {
+    "strip-comments": "^2.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.1",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "typescript": "^5.4.5"
+  }
+}
