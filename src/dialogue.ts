@@ -8,7 +8,6 @@ export function Dialogue(props: ClassAttributes<HTMLInputElement> | null) {
 
 function DialogueStyle(props: ClassAttributes<HTMLInputElement> | null) {
   return h("style", null, `
-    /*
       html {
         min-height: 100%;
         padding: 0;
@@ -23,18 +22,27 @@ function DialogueStyle(props: ClassAttributes<HTMLInputElement> | null) {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 100vh;
       }
       #innerDiv {
         display: flex;
         flex-direction: column;
         justify-content: center;
-      }*/
+        height: 100vh;
+        max-width: 50vw;
+      }
+      h1 {
+        font-size: 7em;
+      }
+      p {
+        font-size: 3em;
+      }
     `);
 }
 
 function DialogueMessage(props: ClassAttributes<HTMLInputElement> | null) {
   return [
     h("h1", null, "You're Timed Out"),
-    h("p", null, "You've spent 5 minutes on YouTube shorts. You could have spent that time taking of yourself in some other way.")
+    h("p", null, "You've spent 5 minutes on YouTube shorts. You could have spent that time taking care of yourself.")
   ];
 }
