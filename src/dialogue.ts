@@ -43,6 +43,6 @@ function DialogueStyle(props: ClassAttributes<HTMLInputElement> | null) {
 function DialogueMessage(props: ClassAttributes<HTMLInputElement> | null) {
   return [
     h("h1", null, "You're Timed Out"),
-    h("p", null, "You've spent 5 minutes on YouTube shorts. You could have spent that time taking care of yourself.")
+    h("p", null, "You've spent 60 seconds on YouTube shorts. You could have spent that time taking care of yourself.")
   ];
 }
