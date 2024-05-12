@@ -6,7 +6,22 @@ const TIMEOUT = 1000 * 60;
 
 function main() {
   console.log("Attatched YouTube Shorts time monitor");
-  setTimeout(timeout, TIMEOUT);
+
+  let shortsTime = 0;
+  let lastCheck = Date.now();
+
+  const interval = setInterval(() => {
+    const url = window.location.href;
+    const now = Date.now();
+    if (url.match("https://www.youtube.com/shorts/.*")) {
+      shortsTime += now - lastCheck;
+    }
+    lastCheck = now;
+    if (shortsTime > TIMEOUT) {
+      timeout();
+      clearInterval(interval);
+    }
+  }, 100);
 }
 
 function timeout() {

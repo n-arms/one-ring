@@ -11,7 +11,7 @@
     {
       "js": ["dist/main.js"],
       "matches": [
-        "https://www.youtube.com/shorts/*"
+        "https://www.youtube.com/*"
       ]
     }
   ]
